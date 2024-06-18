@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/kuliner.css">
+
+    <div class = "header-container">
+        <div class = header-title-box>
+          <label style="font-size: 20px;font-weight: 600;font-family: Arial, Helvetica, sans-serif;">visitBandung</label>
+        </div>
+        <div class="header-texts-box">
+          <div class="header-home-text-box">
+            <a class="navigation-texts" href="/HTML/index.html" style="text-decoration: none;">Home</a>
+          </div>
+          <div class="header-destinations-text-box">
+            <a class="navigation-texts" href="/HTML/DestinationPage.html" style="text-decoration: none;">Destinations</a>
+          </div>
+          <div class="header-restaurant-text-box">
+            <a class="navigation-texts" href="/HTML/Kuliner.html" style="text-decoration: underline;">Restaurant & Culinary</a>
+          </div>
+          <div class="header-lodging-text-box">
+            <a class="navigation-texts" href="/HTML/lodging.html" style="text-decoration: none;">Lodging</a>
+          </div>
+          <div class="header-news-text-box">
+            <a class="navigation-texts" href="/HTML/news.html" style="text-decoration: none;">News</a>
+          </div>
+          <div class="header-login-text-box">
+            <a class="navigation-texts" href="/HTML/Login.html" style="text-decoration: none;">Login</a>
+          </div>
+          <div class = "header-language-box">
+            <img src="/Images/planet-earth.png" class="header-language-box-left">
+            <form action="">
+              <select class="header-language-box-right">
+                <option>ENGLISH</option>
+              </select>
+            </form>
+          </div>
+        </div>
+      </div>
+	<title>Kuliner Bandung</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f0f0f0;
+      margin : 0px;
+		}
+        .jumbotron {
+      background-image: url('/Images/jumbotron.jpg'); /* Replace with your image path */
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 100px 0;
+      position: relative;
+    }
+
+    .jumbotron::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.5); /* Adjust opacity as needed */
+    }
+
+    .jumbotron h1 {
+      font-size: 4em;
+    }
+
+    .jumbotron h2 {
+      font-size: 2.5em;
+      margin-top: 20px;
+    }
+		.kuliner-list {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		.kuliner-list li {
+			background-color: #fff;
+			padding: 20px;
+			border-bottom: 1px solid #ddd;
+		}
+		.kuliner-list li:hover {
+			background-color: #f7f7f7;
+		}
+		.kuliner-list img {
+			width: 100px;
+			height: 100px;
+			margin: 10px;
+			border-radius: 50%;
+		}
+		.kuliner-list h2 {
+			margin-top: 0;
+		}
+		.kuliner-list p {
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="jumbotron">
+		<h1>Discover Culinary Delights.</h1>
+        <h2>Start Your Flavorful Journey!</h2>
+	</div>
+
+
+
+	<main>
+  <h2>Start Your Culinary Journey With Our Amazing Selection!</h2>
+  <div class="food-slider">
+    <div class="food-slides">
+      <div class="food-slide">
+        <img src="/Images/serabi.jpeg" alt="Martabak Boss" class="food-image">
+        <div class="food-desc">
+          <h2>Soerabi Bandung</h2>
+          <p>Imagine biting into a warm, fluffy pancake, but this is no ordinary pancake. This is Soerabi Bandung, a delectable Indonesian delicacy that will captivate your taste buds from the very first bite. Hailing from the vibrant city of Bandung, this treat is a perfect blend of tradition and innovation, making it a must-try for food enthusiasts.</p>
+        </div>
+      </div>
+      <div class="food-slide">
+        <img src="/Images/lotek.jpg" alt="Batagor Kingsley" class="food-image">
+        <div class="food-desc">
+          <h2>Lotek Karedok</h2>
+          <p>The magic of Lotek Karedok lies in its irresistibly rich and aromatic peanut sauce. This sauce is a harmonious blend of roasted peanuts, aromatic garlic, spicy chilies, tangy tamarind, fragrant kaffir lime leaves, and a touch of palm sugar, all pounded together in a mortar and pestle to create a smooth, creamy, and slightly chunky dressing. Each bite is a burst of freshness from the vegetables, perfectly complemented by the nutty, sweet, and mildly spicy sauce.</p>
+        </div>
+      </div>
+      <div class="food-slide">
+        <img src="/Images/kocok.jpg" alt="Mie Kocok Bandung" class="food-image">
+        <div class="food-desc">
+          <h2>Mie Kocok Bandung</h2>
+          <p>Picture this: a steaming bowl filled with a tangle of soft, chewy yellow noodles, bathed in a rich, savory broth that is the soul of the dish. The broth, simmered to perfection, is infused with the deep, hearty flavors of beef marrow, creating a luxurious, velvety texture that warms you from the inside out.</p>
+        </div>
+      </div>
+      <!-- add -->
+    </div>
+    <div class="food-nav">
+      <button class="prev" id="prev">&laquo;</button>
+      <button class="next" id="next">&raquo;</button>
+    </div>
+  </div>
+
+
+  <div class="restaurant-recommendations">
+    <div class="restaurant-card" onclick="location.href='sudirman.html';">
+      <img src="/Images/sudirman.jpg" alt="Restaurant 1">
+      <h3>Sudirman Street</h3>
+      <p>Sudirman Street in Bandung, also known as Sudirman Street Day & Night Market, is one of the city's most popular and bustling culinary destinations.</p>
+    </div>
+    <div class="restaurant-card" onclick="location.href='costilla.html';">
+      <img src="/Images/costilla.jpg" alt="Restaurant 2">
+      <h3>La Costilla</h3>
+      <p>La Costilla in Bandung is a charming culinary spot that combines classic and modern interior design, creating a warm and inviting atmosphere perfect for dining with family, friends, or a significant other. </p>
+    </div>
+    <div class="restaurant-card" onclick="location.href='tafso.html';">
+      <img src="/Images/tafso.jpg" alt="Restaurant 3">
+      <h3>Tafso Barn</h3>
+      <p>Tafso Barn in Bandung is a popular destination known for its unique combination of culinary delights and picturesque setting. This café offers breathtaking views of the surrounding hills and the city below, making it a favorite spot for both locals and tourists.</p>
+    </div>
+    <div class="restaurant-card" onclick="location.href='lerenganteng.html';">
+      <img src="/Images/anteng.jpg" alt="Restaurant 2">
+      <h3>Lereng Anteng</h3>
+      <p>Lereng Anteng Panoramic Coffee is a popular café that features a unique setup that blends with the natural terraced landscape of the hills, offering various seating options, including outdoor, semi-outdoor, and indoor areas.</p>
+    </div>
+    <div class="restaurant-card" onclick="location.href='lawang.html';">
+      <img src="/Images/lawang.jpg" alt="Restaurant 2">
+      <h3>Lawang Wangi</h3>
+      <p>DLawangwangi Creative Space in Bandung is a captivating destination that merges art, nature, and culinary delights. This venue offers stunning panoramic views of Bandung, making it a perfect spot for both art enthusiasts and casual visitors.</p>
+    </div>
+    <div class="restaurant-card" onclick="location.href='paskal.html';">
+      <img src="/Images/paskal.jpg" alt="Restaurant 2">
+      <h3>Paskal Food Market</h3>
+      <p>Paskal Food Market in Bandung is a vibrant culinary hub, teeming with a diverse array of food stalls and eateries that offer an eclectic mix of local and international cuisines.</p>
+    </div>
+    <div class="restaurant-card" onclick="location.href='providore.html';">
+      <img src="/Images/providore.jpg" alt="Restaurant 2">
+      <h3>Miss Bee Providore</h3>
+      <p>Miss Bee Providore offers a unique dining experience that combines a cozy cafe setting with the concept of a modern marketplace. The venue features a warm and inviting interior adorned with rustic decor, creating a welcoming atmosphere for guests.</p>
+    </div>
+    <div class="restaurant-card" onclick="location.href='gormeteria.html';">
+      <img src="/Images/gormeteria.jpg" alt="Restaurant 2">
+      <h3>Gormeteria</h3>
+      <p>Step into our vibrant and funky restaurant where the flavors of Southeast Asia come alive through an eclectic menu of street food delights.</p>
+    </div>
+  </div>
+
+</main>
+
+
+
+    <div class = "footer-container">
+        <div class = footer-title-box>
+          <label style="font-family: Arial, Helvetica, sans-serif;font-size: 24px;font-weight: 600;color: white;">visitBandung</label>
+        </div>
+        <div class = "footer-desc-box">
+          <p style="text-align: center;font-family: Arial, Helvetica, sans-serif;color: white;">visitBandung is your tourist guide website to exploring the charm of the beautiful city of Bandung. 
+            visitBandung is here to be your travel companion in exploring the hidden beauty of Bandung. 
+            Let's start planning your dream vacation together!</p>
+        </div>
+        <div class="footer-images-box">
+          <div class = "footer-images-box-segments">
+            <img class = "footer-images" src="/Images/GOOGLE REAL.jpg" sty>
+          </div>
+          <div class = "footer-images-box-segments">
+            <img class = "footer-images" src="/Images/FB REAL.jpg">
+          </div>
+          <div class = "footer-images-box-segments">
+            <img class = "footer-images" src="/Images/IG.jpg">
+          </div>
+          <div class = "footer-images-box-segments">
+            <img class = "footer-images" src="/Images/twitter.png">
+          </div>
+        </div>
+      </div>
+</body>
+<script src="/JS/kuliner.js"></script>
+</html>
